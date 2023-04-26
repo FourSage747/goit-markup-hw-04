@@ -93,6 +93,7 @@ nav {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--ph-color);
+    fill: var(--svg-color);
 }
 
 .info svg {
@@ -122,7 +123,7 @@ section{
     gap: 8px;
     margin: 0;
     padding: 0;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .button li {
@@ -213,7 +214,10 @@ footer {
     background-color: var(--bg-color);
     padding: 60px 0;
 }
-
+.section_foot {
+    display: flex;
+    gap: 70px;
+}
 /* .foot {
     height: 252px;
     display: flex;
@@ -281,11 +285,26 @@ footer {
     color: var(--text-color-2);
 }
 
+.div h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color-2);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
 .div ul {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .div li {

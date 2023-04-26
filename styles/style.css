@@ -1,4 +1,4 @@
-:root{
+:root {
     --main-color: #2196F3;
     --text-color: black;
     --ph-color: #757575;
@@ -10,6 +10,7 @@
     --svg2-color: #555555;
     --but-color: #1277ca;
 }
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -58,7 +59,8 @@ body {
     letter-spacing: 0.02em;
     padding: 32px 0;
 }
-header{
+
+header {
     border-bottom: solid 1px #ECECEC;
 }
 
@@ -72,12 +74,15 @@ header a {
     color: var(--text-color);
     transition: all 0.3s ease;
 }
-.st{
+
+.st {
     color: var(--main-color);
 }
+
 header a:hover {
     color: var(--main-color);
-    fill: var(--main-color);;
+    fill: var(--main-color);
+    
 }
 
 nav {
@@ -93,6 +98,7 @@ nav {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--ph-color);
+    fill: var(--svg2-color);
 }
 
 .info svg {
@@ -100,7 +106,8 @@ nav {
     height: 16px;
     margin-right: 10px;
 }
-.address{
+
+.address {
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -115,7 +122,10 @@ nav {
 } */
 
 .main {
-    background-color: var(--bg-color);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../imeges/page1/fone.jpg);
     padding: 200px 0;
 }
 
@@ -220,7 +230,8 @@ nav {
     gap: 30px;
     margin: 0;
 }
-.imeges img{
+
+.imeges img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -267,17 +278,20 @@ nav {
 
 .team ul {
     padding: 0;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: row;
     gap: 10px;
     justify-content: center;
 }
-.team img{
+
+.team img {
     display: block;
     max-width: 100%;
     height: auto;
     width: 100%;
 }
+
 .photo h3 {
     font-weight: 500;
     font-size: 16px;
@@ -298,12 +312,13 @@ nav {
     margin: 0;
 }
 
-.photo li {
+.svg li {
     width: 44px;
     height: 44px;
+    list-style-type: none;
 }
 
-.photo a {
+.svg a {
     height: 100%;
     width: 100%;
     display: flex;
@@ -315,12 +330,12 @@ nav {
     fill: var(--svg-color);
 }
 
-.photo a:hover {
+.svg a:hover {
     background-color: var(--main-color);
     fill: var(--text-color-2);
 }
 
-.team li {
+.block {
     list-style-type: none;
     width: 270px;
     background-color: var(--text-color-2);
@@ -329,32 +344,25 @@ nav {
     transition: all .5s ease;
 }
 
-.photo{
-    padding: 30px 0;
+.photo {
+    padding: 30px 0 16px 0;
 }
 
-.team li:hover {
+.block:hover {
     transform: scale(1.1);
 }
 
 .customers {
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 94px 0;
 }
 
-.customers div {
-    width: 1128px;
-    height: 200px;
-}
 
 .customers h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     text-align: center;
-    margin-bottom: 72px;
+    margin-bottom: 50px;
     margin-top: 0;
 }
 
@@ -380,7 +388,8 @@ nav {
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 24px;
+    margin: 0;
+    gap: 30px;
 }
 
 .customers a {
@@ -404,6 +413,11 @@ footer {
     padding: 60px 0;
 }
 
+.section_foot {
+    display: flex;
+    gap: 70px;
+}
+
 /* .foot {
     height: 312px;
     display: flex;
@@ -411,10 +425,11 @@ footer {
     gap: 70px;
     margin-left: 200px;
 } */
-.address1{
+.address1 {
     margin: 0;
     margin-top: 28px;
 }
+
 .address1 a {
     text-decoration: none;
     font-style: normal;
@@ -425,7 +440,8 @@ footer {
     opacity: 0.5;
     transition: all 0.3s ease;
 }
-.address1 a:hover{
+
+.address1 a:hover {
     color: var(--main-color);
     opacity: 1;
 }
@@ -433,12 +449,15 @@ footer {
 .address1 .a {
     opacity: 1;
 }
-.address1 li:first-of-type{
+
+.address1 li:first-of-type {
     margin-bottom: 12px;
 }
-.address1 li:nth-of-type(2){
+
+.address1 li:nth-of-type(2) {
     margin-bottom: 12px;
 }
+
 .logo1 {
     text-decoration: none;
     font-family: 'Raleway';
@@ -470,11 +489,26 @@ footer {
     color: var(--text-color-2);
 }
 
+.div h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color-2);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
 .div ul {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .div li {
