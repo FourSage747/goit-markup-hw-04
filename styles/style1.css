@@ -75,7 +75,8 @@ header a {
 .st{
     color: var(--main-color);
 }
-header a:hover {
+header a:hover,
+header a:focus {
     color: var(--main-color);
     fill: var(--main-color);
 }
@@ -142,7 +143,8 @@ section{
     transition: all .5s ease;
 }
 
-.but:hover {
+.but:hover,
+.but:focus {
     background-color: var(--main-color);
     color: var(--text-color-2);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -204,8 +206,9 @@ section{
     transition: all .5s ease;
 }
 
-.img li:hover {
-    transform: scale(1.1);
+.img li:hover,
+.img li:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -216,7 +219,7 @@ footer {
 }
 .section_foot {
     display: flex;
-    gap: 70px;
+    align-items: baseline;
 }
 /* .foot {
     height: 252px;
@@ -239,7 +242,8 @@ footer {
     opacity: 0.5;
     transition: all 0.3s ease;
 }
-.address1 a:hover{
+.address1 a:hover,
+.address1 a:focus{
     color: var(--main-color);
     opacity: 1;
 }
@@ -314,15 +318,19 @@ footer {
 .div a {
     width: 44px;
     height: 44px;
-    fill: var(--svg-color);
+    fill: rgba(255, 255, 255, 0.1);
     transition: all .3s ease;
 }
 
-.div a:hover {
+.div a:hover,
+.div a:focus {
     fill: var(--main-color);
 }
 
 .div svg {
     width: 44px;
     height: 44px;
+}
+.div{
+    margin-left: 70px;
 }

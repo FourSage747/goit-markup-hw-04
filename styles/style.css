@@ -9,6 +9,7 @@
     --svg-color: #AFB1B8;
     --svg2-color: #555555;
     --but-color: #1277ca;
+    --svg3-color: #F5F4FA
 }
 
 body {
@@ -79,10 +80,11 @@ header a {
     color: var(--main-color);
 }
 
-header a:hover {
+header a:hover,
+header a:focus {
     color: var(--main-color);
     fill: var(--main-color);
-    
+
 }
 
 nav {
@@ -122,11 +124,13 @@ nav {
 } */
 
 .main {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),
-      url(../imeges/page1/fone.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../imeges/page1/fone.jpg);
     padding: 200px 0;
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    margin: auto;
 }
 
 
@@ -213,6 +217,17 @@ nav {
     gap: 30px;
 }
 
+.text ul div {
+    width: 270px;
+    height: 120px;
+    background-color: var(--svg3-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .text li {
     list-style-type: none;
     width: 270px;
@@ -278,7 +293,6 @@ nav {
 
 .team ul {
     padding: 0;
-    padding-bottom: 30px;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -310,6 +324,7 @@ nav {
     letter-spacing: 0.03em;
     color: var(--ph-color);
     margin: 0;
+    margin-bottom: 16px;
 }
 
 .svg li {
@@ -330,7 +345,8 @@ nav {
     fill: var(--svg-color);
 }
 
-.svg a:hover {
+.svg a:hover,
+.svg a:focus {
     background-color: var(--main-color);
     fill: var(--text-color-2);
 }
@@ -339,18 +355,17 @@ nav {
     list-style-type: none;
     width: 270px;
     background-color: var(--text-color-2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     cursor: pointer;
     transition: all .5s ease;
 }
 
 .photo {
-    padding: 30px 0 16px 0;
+    padding: 30px 0;
 }
 
-.block:hover {
-    transform: scale(1.1);
-}
+
 
 .customers {
     padding: 94px 0;
@@ -371,16 +386,10 @@ nav {
     transition: all .5s ease;
     width: 170px;
     height: 92px;
-    border: 2px solid #afb1b8;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .customers li:hover {
     transform: scale(1.1);
-    border: 2px solid #2196F3;
 }
 
 .customers ul {
@@ -396,17 +405,21 @@ nav {
     fill: var(--svg-color);
     width: 170px;
     height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
     transition: all .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.customers a:hover {
+.customers a:hover,
+.customers a:focus {
     fill: var(--main-color);
+    border: 1px solid #2196F3;
 }
 
-.customers svg {
-    width: 170px;
-    height: 92px;
-}
+
 
 footer {
     background-color: var(--bg-color);
@@ -415,7 +428,7 @@ footer {
 
 .section_foot {
     display: flex;
-    gap: 70px;
+    align-items: baseline;
 }
 
 /* .foot {
@@ -441,7 +454,8 @@ footer {
     transition: all 0.3s ease;
 }
 
-.address1 a:hover {
+.address1 a:hover,
+.address1 a:focus {
     color: var(--main-color);
     opacity: 1;
 }
@@ -518,15 +532,19 @@ footer {
 .div a {
     width: 44px;
     height: 44px;
-    fill: var(--svg2-color);
+    fill: rgba(255, 255, 255, 0.1);
     transition: all .3s ease;
 }
 
-.div a:hover {
+.div a:hover,
+.div a:focus {
     fill: var(--main-color);
 }
 
 .div svg {
     width: 44px;
     height: 44px;
+}
+.div{
+    margin-left: 70px;
 }
