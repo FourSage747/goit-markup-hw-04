@@ -192,6 +192,7 @@ section{
 .img a{
     text-decoration: none;
     transition: all .5s ease;
+    display: block;
 }
 .img img{
     display: block;
